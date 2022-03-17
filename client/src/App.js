@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <AppBar position="static" color="inherit">
-        <Typography variant="h2" align="center" color="primary">
+        <Typography variant="h2" align="center" color="se">
           Video Chat
         </Typography>
       </AppBar>
