@@ -1,17 +1,39 @@
 import "./App.css";
+import { AppBar, Typography, Box } from "@mui/material";
 
-import { Typography, AppBar } from "@material-ui/core";
 
-function App() {
+import VideoPlayer from "./components/VideoPlayer";
+import Options from "./components/Options";
+import Notifications from "./components/Notifications";
+
+const topSx = {
+  borderRadius: 15,
+  margin: "30px 100px",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  width: { xs: "90%", md: "600px" },
+  border: "2px solid black",
+};
+
+const wrapSx = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  width: "100%",
+};
+
+export default function App() {
   return (
-    <div className="App">
-      <AppBar position="static" color="inherit">
-        <Typography variant="h2" align="center" color="se">
-          Video Chat
-        </Typography>
+    <Box sx={wrapSx}>
+      <AppBar sx={topSx} position="static" color="inherit">
+        <Typography  variant="h3">Video Player</Typography>
       </AppBar>
-    </div>
+      <VideoPlayer />
+      <Options>
+        <Notifications />
+      </Options>
+    </Box>
   );
 }
-
-export default App;

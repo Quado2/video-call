@@ -1,11 +1,5 @@
 .App {
-  background-color: #282c34;
   text-align: center;
-  color: black;
-  width: 100%;
+  background-image: url('/assets/background.jpeg');
   min-height: 100vh;
-  background-image: url("/assets/background.jpeg");
 }
-
-
-
