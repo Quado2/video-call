@@ -28,7 +28,7 @@ const VideoPlayer = () => {
             <Typography variant="h5" gutterBottom>
               {name || "Name"}
             </Typography>
-            <video style={{ width: "300px" }} playsInline muted ref={myVideo} />
+            <video style={{width:"100%"}}  autoPlay muted ref={myVideo} />
           </Grid>
         </Paper>
       )}
@@ -41,8 +41,8 @@ const VideoPlayer = () => {
               {call.name || "Name"}
             </Typography>
             <video
-              style={{ width: "300px" }}
-              playsInline
+              
+              autoPlay
               muted
               ref={userVideo}
             />
